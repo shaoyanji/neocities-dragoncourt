@@ -67,8 +67,10 @@ status bar.
 
 `task dev:site:deploy:neocities` runs `scripts/task/neocities-push.sh`, which:
 
-1. checks every internal link and asset reference resolves to a file on disk, and that
-   `feed.xml` parses;
+1. runs `scripts/lint.py` here — the same script `.github/workflows/lint.yml` runs on
+   every push, so CI and deploy cannot disagree about what is valid: references resolve,
+   the feed parses and its items resolve, every post has a complete header, and nothing
+   is loaded from another origin;
 2. asks the API which local files already match by SHA-1 (`/api/upload_hash`) and uploads
    only the differences — one multipart request, never a burst;
 3. downloads every uploaded path back and compares bytes (`/api/download`), so the claim

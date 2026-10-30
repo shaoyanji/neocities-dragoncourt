@@ -1,0 +1,28 @@
+name: lint
+
+# The rules live in scripts/lint.py, not in this file: the deploy path in nixconfig runs
+# the same script before it uploads anything, so CI and a deploy cannot disagree about
+# what "valid" means.
+
+on:
+  push:
+    paths:
+      - "site/**"
+      - "scripts/lint.py"
+      - ".github/workflows/lint.yml"
+  pull_request:
+    paths:
+      - "site/**"
+      - "scripts/lint.py"
+  workflow_dispatch:
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Lint the site
+        run: python3 scripts/lint.py

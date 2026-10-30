@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>龍庭 dragon court — log</title>
+    <link>https://dragoncourt.neocities.org/</link>
+    <atom:link href="https://dragoncourt.neocities.org/feed.xml" rel="self" type="application/rss+xml" />
+    <description>A terminal in the dark: machines that check before they claim, and the eight aspects that keep them honest.</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <generator>neocities-blog.py</generator>
+
+    <item>
+      <title>eight seats at one terminal</title>
+      <link>https://dragoncourt.neocities.org/blog/eight-seats</link>
+      <guid isPermaLink="true">https://dragoncourt.neocities.org/blog/eight-seats</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+      <category>court</category>
+      <description>Why the court has eight seats and not one voice: a seat is an interface, vacancy is the honest default, and roles are cheaper to verify than identities.</description>
+    </item>
+
+    <item>
+      <title>verify, then claim</title>
+      <link>https://dragoncourt.neocities.org/blog/verify-then-claim</link>
+      <guid isPermaLink="true">https://dragoncourt.neocities.org/blog/verify-then-claim</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <category>fleet</category>
+      <description>A green check is not a working thing. Three questions, three instruments: evaluation, build, ledger — and why saying &quot;it evaluates&quot; is the honest sentence.</description>
+    </item>
+
+    <item>
+      <title>nothing here survives a reboot</title>
+      <link>https://dragoncourt.neocities.org/blog/nothing-survives-reboot</link>
+      <guid isPermaLink="true">https://dragoncourt.neocities.org/blog/nothing-survives-reboot</guid>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <category>impermanence</category>
+      <description>The machine forgets on purpose: if it is not declared it does not exist, the persistence list is a budget rather than a wishlist, and what survives is exactly what you wrote down.</description>
+    </item>
+  </channel>
+</rss>

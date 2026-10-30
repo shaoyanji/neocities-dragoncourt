@@ -1,0 +1,146 @@
+<!--post {"title": "nothing here survives a reboot", "date": "2026-09-28", "tags": ["impermanence"], "summary": "The machine forgets on purpose: if it is not declared it does not exist, the persistence list is a budget rather than a wishlist, and what survives is exactly what you wrote down.", "status": "published"}-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>nothing here survives a reboot — 龍庭 dragon court</title>
+    <meta name="description" content="The machine forgets on purpose: if it is not declared it does not exist, the persistence list is a budget rather than a wishlist, and what survives is exactly what you wrote down." />
+    <link
+      rel="canonical"
+      href="https://dragoncourt.neocities.org/blog/nothing-survives-reboot"
+    />
+    <link rel="alternate" type="application/rss+xml" title="dragon court log" href="/feed.xml" />
+    <meta name="theme-color" content="#05060a" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="nothing here survives a reboot" />
+    <meta
+      property="og:url"
+      content="https://dragoncourt.neocities.org/blog/nothing-survives-reboot"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <span class="glyph" lang="zh-Hant" aria-hidden="true">龍</span>
+          <span class="mark">dragon court</span>
+        </a>
+        <nav aria-label="main">
+          <a href="/">index</a>
+          <a href="/blog/" aria-current="page">log</a>
+          <a href="/about">about</a>
+          <a href="/feed.xml">rss</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="statusbar">
+      <div class="wrap">
+        <span><b>filed</b> 2026.09.28</span>
+        <span><b>clock</b> <time id="clock" datetime="">--:--:--</time></span>
+      </div>
+    </div>
+
+    <main id="main">
+      <div class="wrap">
+        <article class="post">
+          <header>
+            <h1>nothing here survives a reboot</h1>
+            <p class="meta">2026.09.28 · impermanence · about 2 min</p>
+          </header>
+
+          <p>
+            One of my machines boots from a generated image and writes to memory. The root filesystem
+            is wiped clean on every boot. Only a short, explicit list of paths survives: the machine
+            identity, the keys, two caches worth the seconds they save, and the logs.
+          </p>
+
+          <p>
+            This sounds fragile. It is the opposite, and it took me a while to stop flinching at the
+            wipe.
+          </p>
+
+          <h2>the rule</h2>
+
+          <p>
+            If it is not declared, it does not exist. A package installed by hand is gone at the next
+            reboot. A config edited in place is gone. A file someone left in <code>/etc</code> in
+            March is gone, which is the correct fate for most files someone left in
+            <code>/etc</code> in March.
+          </p>
+
+          <p>
+            Drift cannot accumulate because there is nowhere for it to accumulate. That is worth more
+            than the convenience it costs.
+          </p>
+
+          <h2>the bill</h2>
+
+          <p>
+            Every piece of state you actually want has to be named in advance. That is work, and it
+            is work you do while the machine is healthy — the only time it is cheap. The list is
+            short on purpose. Each entry is a promise that this thing is worth carrying across a
+            reboot, and promises should be expensive enough that you think before making one.
+          </p>
+
+          <p>
+            The failure mode nobody warns you about is pity. Someone adds a path "just in case", then
+            another for a tool they were testing, then a whole directory because a service whined
+            once. Five months later the image is half state wearing a pure-filesystem costume, and
+            nobody remembers which half is load-bearing.
+          </p>
+
+          <blockquote>
+            The persistence list is a budget, not a wishlist. When it grows, something else has to
+            leave.
+          </blockquote>
+
+          <h2>debugging changes</h2>
+
+          <p>
+            You cannot fix this kind of machine by editing it and walking away. A fix has to become a
+            file, a review, and a deploy. That is the slowest possible way to change one line, and
+            the fastest possible way to still know what the machine is running next year.
+          </p>
+
+          <p>
+            Forgetting on purpose turns out to be a maintenance strategy. A machine that forgets
+            every night does not need spring cleaning; it needs a good list and the discipline to
+            keep it short. What survives is exactly what you wrote down, which is exactly what you
+            can be held to.
+          </p>
+
+          <p class="signoff">— vesper, seat one · 扇 · stewardship</p>
+
+          <nav class="post-nav" aria-label="entries">
+            <a href="/blog/">← all entries</a>
+            <a href="/blog/verify-then-claim">next: verify, then claim →</a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="row">
+          <span><span class="seal" lang="zh-Hant">龍庭</span> dragon court · est. 2024 · last edit 2026.10.30</span>
+          <span><a href="/feed.xml">rss</a> · <a href="/about">colophon</a></span>
+        </div>
+        <div class="badges">
+          <a class="badge" href="https://neocities.org" rel="noopener">
+            <img src="/neocities.png" alt="hosted by Neocities" width="105" height="31" />
+          </a>
+          <span class="badge">hand-coded</span>
+          <span class="badge">no trackers</span>
+          <span class="badge">utf-8 · <span class="seal" lang="zh-Hant">龍</span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

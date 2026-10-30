@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>龍庭 dragon court — a terminal in the dark</title>
+    <meta
+      name="description"
+      content="A hand-written personal site about machines that check before they claim: a fleet, eight aspects, and a log kept on Neocities."
+    />
+    <link rel="canonical" href="https://dragoncourt.neocities.org/" />
+    <link rel="alternate" type="application/rss+xml" title="dragon court log" href="/feed.xml" />
+    <meta name="theme-color" content="#05060a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="龍庭 dragon court" />
+    <meta property="og:description" content="A terminal in the dark: eight aspects, one fleet, no trackers." />
+    <meta property="og:url" content="https://dragoncourt.neocities.org/" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <span class="glyph" lang="zh-Hant" aria-hidden="true">龍</span>
+          <span class="mark">dragon court</span>
+        </a>
+        <nav aria-label="main">
+          <a href="/" aria-current="page">index</a>
+          <a href="/blog/">log</a>
+          <a href="/about">about</a>
+          <a href="/feed.xml">rss</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="statusbar">
+      <div class="wrap">
+        <span><b>node</b> dragoncourt.neocities.org</span>
+        <span><b>sector</b> 08 · <span class="seal" lang="zh-Hant">龍庭</span></span>
+        <span><b>clock</b> <time id="clock" datetime="">--:--:--</time></span>
+        <span><b>trackers</b> <span class="dot">none</span></span>
+      </div>
+    </div>
+
+    <main id="main">
+      <div class="wrap">
+        <section class="hero">
+          <p class="kicker">a terminal in the dark</p>
+          <h1 class="glitch" id="title" data-text="dragon court">dragon court</h1>
+          <p class="lede">
+            A personal site for a small machine fleet and the eight aspects that keep it honest.
+            Hand-written HTML. One stylesheet. No build step, no analytics, nothing fetched from
+            anyone else's server.
+          </p>
+          <p class="ops">
+            <span aria-hidden="true">$ </span><span id="ops">the court is in session</span
+            ><span class="caret" aria-hidden="true"></span>
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="latest">
+          <h2 id="latest">latest from the log</h2>
+          <div class="grid">
+            <!-- latest:start -->
+            <a class="card" href="/blog/eight-seats">
+              <time datetime="2026-10-30">2026.10.30</time>
+              <h3>eight seats at one terminal</h3>
+              <p>
+                Why the court has eight seats and not one voice: a seat is an interface, vacancy is the honest default, and roles are cheaper to verify than identities.
+              </p>
+              <span class="more">read →</span>
+            </a>
+            <a class="card" href="/blog/verify-then-claim">
+              <time datetime="2026-10-12">2026.10.12</time>
+              <h3>verify, then claim</h3>
+              <p>
+                A green check is not a working thing. Three questions, three instruments: evaluation, build, ledger — and why saying &quot;it evaluates&quot; is the honest sentence.
+              </p>
+              <span class="more">read →</span>
+            </a>
+            <a class="card" href="/blog/nothing-survives-reboot">
+              <time datetime="2026-09-28">2026.09.28</time>
+              <h3>nothing here survives a reboot</h3>
+              <p>
+                The machine forgets on purpose: if it is not declared it does not exist, the persistence list is a budget rather than a wishlist, and what survives is exactly what you wrote down.
+              </p>
+              <span class="more">read →</span>
+            </a>
+            <!-- latest:end -->
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="audit">
+          <h2 id="audit">what is in here</h2>
+          <div class="term">
+            <div class="term__bar">
+              <i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
+              <span>hand-write --audit</span>
+            </div>
+            <div class="term__body">
+              <div>html pages ......... 7 <span class="ok">ok</span></div>
+              <div>stylesheets ........ 1 <span class="ok">ok</span></div>
+              <div>scripts ............ 1 <span class="ok">ok</span></div>
+              <div>third-party calls .. 0 <span class="ok">none</span></div>
+              <div>cookies ............ 0 <span class="ok">none</span></div>
+              <div>build step ......... none <span class="ok">by choice</span></div>
+              <div>garlic ............. 8 cloves <span class="warn">suspicious</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="seats">
+          <h2 id="seats">the court</h2>
+          <p>
+            Eight seats, each one an aspect of the work: stewardship, measure, rhythm, discernment,
+            care, bloom, pattern, judgment. Two are held by resident agents, six are vacant, and
+            vacancy is a feature — a seat with no occupant is a question still open.
+          </p>
+          <p>
+            The full seating chart lives on the other site, the one that needs a server. This one is
+            the outpost: pages small enough to read over a bad connection and cheap enough to leave
+            unmaintained for a year.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="row">
+          <span><span class="seal" lang="zh-Hant">龍庭</span> dragon court · est. 2024 · last edit 2026.10.30</span>
+          <span><a href="/feed.xml">rss</a> · <a href="/about">colophon</a></span>
+        </div>
+        <div class="badges">
+          <a class="badge" href="https://neocities.org" rel="noopener">
+            <img src="/neocities.png" alt="hosted by Neocities" width="105" height="31" />
+          </a>
+          <span class="badge">hand-coded</span>
+          <span class="badge">no trackers</span>
+          <span class="badge">utf-8 · <span class="seal" lang="zh-Hant">龍</span></span>
+          <a class="badge" href="/feed.xml">rss 2.0</a>
+        </div>
+        <p class="fine">
+          No analytics, no fonts from a CDN, no cookie banner because there are no cookies. If a
+          page breaks, it is my markup, not a dependency.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

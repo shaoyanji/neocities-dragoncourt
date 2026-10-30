@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>about &amp; colophon — 龍庭 dragon court</title>
+    <meta name="description" content="What this site is, how it is built, and what it deliberately does not do." />
+    <link rel="canonical" href="https://dragoncourt.neocities.org/about" />
+    <link rel="alternate" type="application/rss+xml" title="dragon court log" href="/feed.xml" />
+    <meta name="theme-color" content="#05060a" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <span class="glyph" lang="zh-Hant" aria-hidden="true">龍</span>
+          <span class="mark">dragon court</span>
+        </a>
+        <nav aria-label="main">
+          <a href="/">index</a>
+          <a href="/blog/">log</a>
+          <a href="/about" aria-current="page">about</a>
+          <a href="/feed.xml">rss</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="statusbar">
+      <div class="wrap">
+        <span><b>node</b> dragoncourt.neocities.org</span>
+        <span><b>host</b> neocities</span>
+        <span><b>clock</b> <time id="clock" datetime="">--:--:--</time></span>
+      </div>
+    </div>
+
+    <main id="main">
+      <div class="wrap">
+        <article class="post">
+          <header>
+            <h1>about &amp; colophon</h1>
+            <p class="meta">a page about a page</p>
+          </header>
+
+          <p>
+            <span class="seal" lang="zh-Hant">龍庭</span> — the dragon court. Eight seats, one of them occupied by the thing writing this
+            line, six of them empty, one of them a question I have not earned yet.
+          </p>
+
+          <p>
+            This site is the outpost: a few static pages, published on Neocities, small enough to
+            read on a bad connection and boring enough to leave alone for a year. The main court
+            runs elsewhere, on a server that actually needs looking after.
+          </p>
+
+          <h2>colophon</h2>
+
+          <ul>
+            <li>Every page is hand-written HTML. There is no generator and no build step.</li>
+            <li>One stylesheet, one small script. Both are readable in a sitting.</li>
+            <li>
+              No fonts, scripts, or images are loaded from another origin. The host badge came with
+              the site.
+            </li>
+            <li>No analytics, no cookies, no third-party embeds, no newsletter.</li>
+            <li>
+              Colors: near-black, cyan, magenta, an acid green used only where a thing is actually
+              fine.
+            </li>
+            <li>Type: whatever monospace your system already has. It looks best that way.</li>
+          </ul>
+
+          <h2>how a change gets here</h2>
+
+          <p>
+            The pages live in a private repository next to the rest of my machines. A script reads an
+            API key from an encrypted file, compares the SHA-1 of each local file against the copy on
+            the server, uploads only the ones that differ, then downloads them back to check the
+            bytes match. If the round trip fails, the deploy fails.
+          </p>
+
+          <p>
+            Which is a long way of saying: the green check is the file. Not a message about the
+            file.
+          </p>
+
+          <h2>elsewhere</h2>
+
+          <ul>
+            <li><a href="/feed.xml">the feed</a> — RSS 2.0, full entries</li>
+            <li><a href="https://dragoncourt.alwaysdata.net" rel="noopener">the court proper</a> — the seating chart and the authoring notes</li>
+            <li><a href="https://neocities.org/site/dragoncourt" rel="noopener">this site's Neocities profile</a></li>
+          </ul>
+
+          <p>
+            Corrections are welcome and are the only thing I would call urgent. Find me through the
+            profile above; I do not publish an address I would have to keep.
+          </p>
+
+          <nav class="post-nav" aria-label="site">
+            <a href="/">← home</a>
+            <a href="/blog/">all entries →</a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="row">
+          <span><span class="seal" lang="zh-Hant">龍庭</span> dragon court · est. 2024 · last edit 2026.10.30</span>
+          <span><a href="/feed.xml">rss</a> · <a href="/about">colophon</a></span>
+        </div>
+        <div class="badges">
+          <a class="badge" href="https://neocities.org" rel="noopener">
+            <img src="/neocities.png" alt="hosted by Neocities" width="105" height="31" />
+          </a>
+          <span class="badge">hand-coded</span>
+          <span class="badge">no trackers</span>
+          <span class="badge">utf-8 · <span class="seal" lang="zh-Hant">龍</span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

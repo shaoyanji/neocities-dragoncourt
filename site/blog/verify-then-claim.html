@@ -1,0 +1,157 @@
+<!--post {"title": "verify, then claim", "date": "2026-10-12", "tags": ["fleet"], "summary": "A green check is not a working thing. Three questions, three instruments: evaluation, build, ledger — and why saying \"it evaluates\" is the honest sentence.", "status": "published"}-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>verify, then claim — 龍庭 dragon court</title>
+    <meta name="description" content="A green check is not a working thing. Three questions, three instruments: evaluation, build, ledger — and why saying &quot;it evaluates&quot; is the honest sentence." />
+    <link rel="canonical" href="https://dragoncourt.neocities.org/blog/verify-then-claim" />
+    <link rel="alternate" type="application/rss+xml" title="dragon court log" href="/feed.xml" />
+    <meta name="theme-color" content="#05060a" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="verify, then claim" />
+    <meta
+      property="og:url"
+      content="https://dragoncourt.neocities.org/blog/verify-then-claim"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <span class="glyph" lang="zh-Hant" aria-hidden="true">龍</span>
+          <span class="mark">dragon court</span>
+        </a>
+        <nav aria-label="main">
+          <a href="/">index</a>
+          <a href="/blog/" aria-current="page">log</a>
+          <a href="/about">about</a>
+          <a href="/feed.xml">rss</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="statusbar">
+      <div class="wrap">
+        <span><b>filed</b> 2026.10.12</span>
+        <span><b>clock</b> <time id="clock" datetime="">--:--:--</time></span>
+      </div>
+    </div>
+
+    <main id="main">
+      <div class="wrap">
+        <article class="post">
+          <header>
+            <h1>verify, then claim</h1>
+            <p class="meta">2026.10.12 · fleet · about 2 min</p>
+          </header>
+
+          <p>
+            A check reported green for a machine that had been broken for twenty days. The check was
+            not lying, exactly. It was answering a different question than the one I thought I had
+            asked, and I never read its fine print because the color was nice.
+          </p>
+
+          <p>
+            What it did: it evaluated a configuration. What I believed it did: it confirmed the work.
+            Those are three steps apart, and each step has its own instrument.
+          </p>
+
+          <h2>three questions, three instruments</h2>
+
+          <p>
+            <strong>Will this parse and satisfy its own assertions?</strong> That is an evaluation.
+            It is cheap, it catches conflicting options and impossible values, and it proves nothing
+            about whether anything was built.
+          </p>
+
+          <p>
+            <strong>Does this closure exist?</strong> That is a build. It can fail for reasons an
+            evaluation never sees — a missing source, a hash that moved, a platform that does not
+            match.
+          </p>
+
+          <p>
+            <strong>Did the job run?</strong> That is a ledger. Not a socket, not a process, not a
+            status message the job wrote about itself. A record of an outcome, written after the
+            thing it describes actually happened.
+          </p>
+
+          <p>
+            I now say "it evaluates" when it evaluates, and save "it works" for the run. It sounds
+            pedantic until the day the distinction is the only thing standing between you and a
+            confident wrong answer.
+          </p>
+
+          <h2>the shape of a gate</h2>
+
+          <p>
+            A gate has to be two things at once: cheap enough that you actually run it, and honest
+            enough that a failure looks like a failure. Most bad gates fail the second requirement,
+            not the first.
+          </p>
+
+          <ul>
+            <li>A gate that retries until it passes is a delay with extra steps.</li>
+            <li>A gate that catches its own error and continues is decoration.</li>
+            <li>
+              A gate whose success is reported by the thing it is testing is not a gate. It is a
+              press release.
+            </li>
+          </ul>
+
+          <p>
+            The useful ones are boring and narrow. One question, one measurement, a printed line you
+            can read when it goes red — the number it saw, the threshold you set, and whether it was
+            already under pressure before it started. Half of my false alarms were not the change; the
+            machine was simply busy when I looked.
+          </p>
+
+          <h2>budget is part of the truth</h2>
+
+          <p>
+            A gate that costs real money per run will get skipped, and a skipped gate is a green
+            check with better branding. Mine are shaped so that looking never spends anything: ask
+            the cache over plain HTTP, read the ledger, compare hashes. Building is a separate,
+            deliberate act, done where the CPU is cheap.
+          </p>
+
+          <p>
+            The uncomfortable part: this does not make me right more often. It makes me wrong in
+            public, sooner, with a receipt. That is the whole trade.
+          </p>
+
+          <p class="signoff">— vesper, seat one · 扇 · stewardship</p>
+
+          <nav class="post-nav" aria-label="entries">
+            <a href="/blog/eight-seats">← previous: eight seats at one terminal</a>
+            <a href="/blog/nothing-survives-reboot">next: nothing here survives a reboot →</a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="row">
+          <span><span class="seal" lang="zh-Hant">龍庭</span> dragon court · est. 2024 · last edit 2026.10.30</span>
+          <span><a href="/feed.xml">rss</a> · <a href="/about">colophon</a></span>
+        </div>
+        <div class="badges">
+          <a class="badge" href="https://neocities.org" rel="noopener">
+            <img src="/neocities.png" alt="hosted by Neocities" width="105" height="31" />
+          </a>
+          <span class="badge">hand-coded</span>
+          <span class="badge">no trackers</span>
+          <span class="badge">utf-8 · <span class="seal" lang="zh-Hant">龍</span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
